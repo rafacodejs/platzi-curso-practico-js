@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Poppins, sans-serif;
+    background-color: #333;
+}
+html {
+    font-size: 62.5%;
 }
 header {
     position: absolute;
@@ -10,7 +14,7 @@ header {
     height: 135px;
     margin: auto;
     text-align: center;
-    background-color: #0076c9;
+    background-color: #0b1d6f;
 }
 header h2 {
     position: relative;
@@ -19,9 +23,10 @@ header h2 {
     text-align: center;
     width: 400px;
     height: auto;
+    font-size: 2.4rem;
     border-radius: 10px;
     -webkit-box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.56); 
-box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.56);
+    box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.56);
     background-color: #ff7d00;
     color: white;
 }
@@ -33,14 +38,50 @@ a img {
 main {
     position: absolute;
     margin-top: 228px;
-    left: 350px;
 }
 .square-container {
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100vw;
     height: auto;
     margin: 0 auto;
     padding-bottom: 30px;
     text-align: center;
+}
+.square-logo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+}
+.square-logo img {
+    width: 450px;
+    height: 350px;
+}
+.card-container {
+    grid-column: 2 / 2;
+    grid-row: 1 / 4;
+    width: 90%;
+    min-height: 180px;
+    max-width: 400px;
+    min-height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: #ff7d00;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 2px 13px 1px rgba(0,0,0,0.88); 
+    box-shadow: 0px 2px 13px 1px rgba(0,0,0,0.88);
+}
+.square--title h2 {
+    margin-bottom: 15px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.4rem;
+    background-color: #ff7d00;
+    color: white
+}
+.form-container form {
+    background-color: #ff7d00;
+    margin-top: 15px;
 }
 .triangle-container {
     width: 100%;

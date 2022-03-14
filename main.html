@@ -17,10 +17,8 @@
       </h2>
     </header>
     <main>
-      <section class="square-container">
-          <div class="square-logo">
-              <img src="/images/3D_rounded_square_with_Snapchat_logo-PhotoRoom.png" alt="">
-          </div>
+      <section class="main-container">
+        <section class="square-container">
           <div class="card-container">
             <div class="square--title">
                 <h2>Calcula el área y <br> perímetro de un cuadrado</h2>
@@ -38,10 +36,45 @@
                   <button type="button" onclick="calcularAreaCuadrado()">
                       Calcular Área
                   </button>
+              </div>
+              </div>
+              </label>
+        </form>
+      </section>
+      <section class="triangle-container">
+        <div class="card-container">
+          <div class="square--title">
+        <h2>Calcula el área y perímetro de un triángulo</h2>
+          </div>
+          <div class="form-container"></div>
+        <form action="">
+          <label for="InputTrianguloLadoA"> 
+            <span>Escribe cuánto mide el lado A de tu triángulo</span>
+            <input id="InputTrianguloLadoA" type="number" /> <br>
+        <form action="">
+          <label for="InputTrianguloLadoB">
+            <span>Escribe cuánto mide el lado B de tu triángulo</span>
+            <input id="InputTrianguloLadoB" type="number" /> <br>
+        <form action="">
+          <label for="InputTrianguloBase">
+            <span>Escribe cuánto mide la base de tu triángulo</span>
+                <input id="InputTrianguloBase" type="number"/> <br>
+        <form action="">
+          <label for="InputTrianguloAltura">
+            <span>Escribe cuánto mide la InputTrianguloAltura</span>
+                <input id="InputTriangulo" type="number" /> <br>
+              <div class="button-container">
+            <button type="button" onclick="calcularPerimetroTriangulo()">
+              Calcular perímetro
+            </button>
+            <button type="button" onclick="calcularAreaTriangulo()">
+              Calcular Área
+            </button>
           </div>
         </div>
-        </label>
+          </label>
         </form>
+      </section>
       </section>
     </main>
   </body>

@@ -37,29 +37,20 @@ a img {
 }
 main {
     position: absolute;
+    display: flex;
+    width: 100vw;
     margin-top: 228px;
 }
-.square-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    width: 100vw;
-    height: auto;
+.main-container {
     margin: 0 auto;
-    padding-bottom: 30px;
+}
+.square-container {
+    display: inline-block;
+    width: 400px;
+    height: auto;
     text-align: center;
 }
-.square-logo {
-    grid-column: 1 / 2;
-    grid-row: 1 / 4;
-}
-.square-logo img {
-    width: 450px;
-    height: 350px;
-}
 .card-container {
-    grid-column: 2 / 2;
-    grid-row: 1 / 4;
     width: 90%;
     min-height: 180px;
     max-width: 400px;
@@ -73,7 +64,7 @@ main {
 }
 .square--title h2 {
     margin-bottom: 15px;
-    font-size: 2.4rem;
+    font-size: 2.0rem;
     font-weight: bold;
     line-height: 2.4rem;
     background-color: #ff7d00;
@@ -81,13 +72,42 @@ main {
 }
 .form-container form {
     background-color: #ff7d00;
-    margin-top: 15px;
+}
+.form-container form span {
+    background-color: #ff7d00;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-bottom: 2px solid #333;
+}
+#InputCuadrado  {
+    background: white;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #333;
+}
+#InputTriangulo {
+    background: white;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #333;
+}
+.button-container {
+    background-color: #ff7d00;
+    margin-top: 10px;
+}
+.button-container button {
+    background-color: white;
+    font-size: 1.5rem;
+    margin: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 2px 13px 1px rgba(0,0,0,0.88); 
+    box-shadow: 0px 2px 13px 1px rgba(0,0,0,0.88);
 }
 .triangle-container {
-    width: 100%;
+    display: inline-block;
+    width: 400px;
     height: auto;
-    margin: 0 auto;
-    padding-bottom: 30px;
     text-align: center;
 }
 .circle-container {

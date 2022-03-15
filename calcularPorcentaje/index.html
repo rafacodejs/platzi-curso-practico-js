@@ -4,10 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
     <script src="/app.js"></script>
     <title>Document</title>
   </head>
   <body>
-      <h1>Porcentajes y descuentos</h1>
-    </body>
+    <header class="header-container">
+      <section class="header-section">
+        <a href=""><img src="/images/pngwing.com.png" alt="" /></a>
+        <h1>Porcentajes y descuentros</h1>
+      </section>
+    </header>
+    <div class="subtitle">
+      <h3>Caculadora de descuentos</h3>
+    </div>
+    <section class="card-container">
+      <form action="">
+        <label for="InputPrice"><span>Escribe el precio de tu producto</span></label>
+        <input id="InputPrice" type="number" />
+        <label for="InputCoupon"> <br> 
+        <span id="secondtitle">Escribe el cupón de tu descuento</span></label> <br>
+        <input id="InputCoupon" type="text" /> <br>
+        <button type="button" onclick="onClickButtonPriceDiscount()">
+          Calcular
+        </button>
+        <p id="ResultP"></p>
+      </form>
+    </section>
+  </body>
 </html>
